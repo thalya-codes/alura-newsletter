@@ -16,6 +16,19 @@
                     },
                     fontFamily: {
                         vastShadow: ['Vast Shadow', 'cursive']
+                    },
+                    keyframes: {
+                        sino_kf: {
+                            '0%, 100%': {
+                              transform: 'rotate(-10deg)'  
+                            },
+                            '50%': {
+                                transform: 'rotate(10deg)'
+                            },
+                        }
+                    },
+                    animation: {
+                      sino: 'sino_kf 0.31s ease-in-out infinite'
                     }
                 }
             }
@@ -23,17 +36,17 @@
     </script>
 </head>
 <body>
-    <div class="flex items-center group">
+    <div class="flex items-center">
         <img class="h-64 md:h-48 w-2/6" src="https://img.freepik.com/free-photo/website-development-developer-working-program-codes-office-computer-program-programmer-workplace-programming-code-software-source-code_372999-389.jpg?w=1380" alt="codigo json">
 
-        <div class="bg-gradient-to-r from-pink-300 to-slate-400 p-10 m-auto my-10 w-5/6 h-64 md:h-48 gap-6">
+        <div class="bg-gradient-to-r from-pink-300 to-slate-400 p-10 m-auto my-10 w-5/6 h-64 md:h-48 gap-6 ">
             <p class="font-black text-6xl peer">Gabriela</p>
             <p class="text-4xl text-primary font-vastShadow peer-hover:text-indigo-800">Desenvolvedora Front-end</p>
             
-            <ul class="flex gap-3 mb-4">
-                <li class="hover:text-primary hover:font-bold group-hover:hidden my-3"><a href="#">Linkedin</a></li>
-                <li class="hover:text-primary hover:font-bold group-hover:hidden my-3"><a href="#">Email</a></li>
-                <li class="hover:text-primary hover:font-bold group-hover:hidden my-3"><a href="#">Github</a></li>
+            <ul class="flex gap-3 mb-4 group">
+                <li class="hover:text-primary hover:font-bold my-3 group-hover:animate-sino"><a href="#">Linkedin</a></li>
+                <li class="hover:text-primary hover:font-bold my-3 group-hover:animate-sino"><a href="#">Email</a></li>
+                <li class="hover:text-primary hover:font-bold my-3 group-hover:animate-sino"><a href="#">Github</a></li>
             </ul>_
         </div>
     </div>
